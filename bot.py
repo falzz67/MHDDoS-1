@@ -48,15 +48,15 @@ def handle_start(message):
         else:
             dias_restantes = (expiration_date - datetime.now()).days
             vip_status = (
-                f"✅ CLIENTE VIP!\n"
-                f"⏳ Dias restantes: {dias_restantes} dia(s)\n"
+                f"✅ USER VIP!\n"
+                f"⏳ Days restantes: {dias_restantes} day(s)\n"
                 f"📅 Expira en: {expiration_date.strftime('%d/%m/%Y %H:%M:%S')}"
             )
     else:
         vip_status = "❌ *No tienes un plan vip activo.*"
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardButton(
-        text="💻 VENDEDOR - OFICIAL 💻",
+        text="💻 CONTAC - FALZZ 💻",
         url=f"tg://user?id={ADMIN_ID}"
 
     )
